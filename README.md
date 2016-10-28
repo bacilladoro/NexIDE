@@ -1,6 +1,6 @@
 ![http://thenexio.com](http://thenexio.com/sites/all/themes/nexio/images/logo.png)
 # **NexIDE v0.8-BETA** #
-An IDE for the Internet of Things.
+An IDE based on Electron for the Internet of Things.
 http://thenexio.com
 
 [![Website](https://img.shields.io/badge/website-NexIO-blue.svg)](http://thenexio.com)
@@ -26,6 +26,7 @@ You can upload the code to your [NexBrd](http://thenexio.com/nexbrd) or any othe
 
 # Requirements
   Intstalling of these components in mandatory
+  - [Electron](https://github.com/electron/electron)
   - unrar
   - GNU autoconf, automake, libtool
   - GNU gcc, g++, make
@@ -45,6 +46,8 @@ make
 ```
 ADD ```/opt/esp-open-sdk/xtensa-lx106-elf/bin``` to your /etc/environment file.
 ADD your User to the dialout group to get access to the USB from the IDE.
+
+You need to install [Electron](https://github.com/electron/electron) and use this app or you can download a packaged app from here: [NexIDE](http://thenexio.com/nexide)
 
 # License
 

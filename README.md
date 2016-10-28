@@ -1,3 +1,4 @@
+[http://thenexio.com](http://thenexio.com/sites/all/themes/nexio/images/logo.png)
 ## NexIDE
 An IDE for the Internet of Things.
 
@@ -5,7 +6,7 @@ An IDE for the Internet of Things.
 http://thenexio.com
 
 [![Website](https://img.shields.io/badge/website-NexIO-blue.svg)](http://thenexio.com)
-[![Current Version](https://img.shields.io/badge/version-0.8-BETA-green.svg)]
+[![Current Version](https://img.shields.io/badge/version-0.8--BETA-yellow.svg)]
 [![Build Status](https://img.shields.io/badge/build-Passing-green.svg)]
 [![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://github.com/nodemcu/nodemcu-firmware/blob/master/LICENSE)
 

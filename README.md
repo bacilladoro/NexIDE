@@ -8,7 +8,7 @@ http://thenexio.com
 [![Website](https://img.shields.io/badge/website-NexIO-blue.svg)](http://thenexio.com)
 ![Current Version](https://img.shields.io/badge/version-0.8--BETA-yellow.svg)
 ![Build Status](https://img.shields.io/badge/build-Passing-green.svg)
-[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://github.com/nodemcu/nodemcu-firmware/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://github.com/rgujju/NexIDE/blob/master/LICENSE)
 
 ### An IDE for programming in NodeMCU and Arduino
 
@@ -50,7 +50,7 @@ ADD your User to the dialout group to get access to the USB from the IDE.
 
 # License
 
-[GPLv3.0](https://github.com/rgujju/nexide/blob/master/LICENSE) © [thenexio.com](http://thenexio.com/)
+[GPLv3.0](https://github.com/rgujju/NexIDE/blob/master/LICENSE) © [thenexio.com](http://thenexio.com/)
 
 # Credits
 - [NodeMCU](https://github.com/nodemcu/nodemcu-firmware)

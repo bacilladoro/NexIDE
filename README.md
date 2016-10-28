@@ -1,8 +1,6 @@
 ![http://thenexio.com](http://thenexio.com/sites/all/themes/nexio/images/logo.png)
-## NexIDE
-An IDE for the Internet of Things.
-
 # **NexIDE v0.8-BETA** #
+An IDE for the Internet of Things.
 http://thenexio.com
 
 [![Website](https://img.shields.io/badge/website-NexIO-blue.svg)](http://thenexio.com)

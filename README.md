@@ -40,9 +40,6 @@ You need follow these instructions exactly:
 git clone --recursive https://github.com/pfalcon/esp-open-sdk.git /opt/esp-open-sdk
 cd /opt/esp-open-sdk
 make STANDALONE=y
-PATH=/opt/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
-cd /opt/nodemcu-firmware
-make
 ```
 ADD ```/opt/esp-open-sdk/xtensa-lx106-elf/bin``` to your /etc/environment file.
 ADD your User to the dialout group to get access to the USB from the IDE.

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="easy-sidebar-active">
+  <head>
+    <meta charset="UTF-8">
+    <title>NexIDEv0.8-BETA</title>
+    <link href="ui/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="ui/css/easy-sidebar.css" rel="stylesheet" type="text/css"/>
+    <link href="./ui/fontAwesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse easy-sidebar sideMain">
+      <div class="container-fluid">
+        <a id="nav-toggle" href="#"><span></span></a> <!-- hamburger -->
+          <ul id="sideList">
+              <span class="fa-stack fa-lg listIcon">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+              </span>
+            <li class="btn"><a href="#" id="code">Code</a></li>
+              <span id="terminalLinkIcon" class="fa-stack fa-lg listIcon">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+              </span>
+            <li class="btn"><a href="#" id="terminalLink">Terminal</a></li>
+            <span id="tutorialLinkIcon" class="fa-stack fa-lg listIcon">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+            </span>
+            <li class="btn"><a href="#" id="tutorialLink">Learn</a></li>
+            <span id="firmwareLinkIcon"  class="fa-stack fa-lg listIcon">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+            </span>
+            <li class="btn"><a href="#" id="firmwareLink">Firmware</a></li>
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="main">
+      <div id="tabs">
+        <ul class="nav nav-tabs tabList">
+            <li class="active" id="editorLi1"><a data-toggle="tab" href="#editor1" id="editor1Link" class="tabPane"><span id="editor1SpanFull" class="hidden">untitled</span><span id="editor1Span" class="tabSpan">Untitled</span></a></li>
+            <li class="hidden" id="editorLi2"><a data-toggle="tab" href="#editor2" id="editor2Link" class="tabPane"><span id="editor2SpanFull" class="hidden">untitled</span><span id="editor2Span" class="tabSpan">Untitled</span><button class="closeBtn" id="closeBtn2"><i class="fa fa-times" aria-hidden="true"></i></button></a></li>
+            <li class="hidden" id="editorLi3"><a data-toggle="tab" href="#editor3" id="editor3Link" class="tabPane"><span id="editor3SpanFull" class="hidden">untitled</span><span id="editor3Span" class="tabSpan">Untitled</span><button class="closeBtn" id="closeBtn3"><i class="fa fa-times" aria-hidden="true"></i></button></a></li>
+        </ul>
+        <button class="btn btn-success" id="addTab"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+
+        <div class="tab-content">
+          <div id="editor1" class="tab-pane in active">This is Editor 1</div>
+          <div id="editor2" class="tab-pane in active hidden">This is editor 2</div>
+          <div id="editor3" class="tab-pane in active hidden">This is editor 3</div>
+        </div>
+
+      </div>
+    </div>
+
+  <div class="container-fluid footer">
+
+      <button class="btn btn-success btn-lg" id="upload">Upload</button>
+      	<div class="dropup">
+          <button class="btn btn-default dropdown-toggle" type="button" id='portBtn' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Port</button>
+          <ul class="dropdown-menu devClassSel" aria-labelledby="portBtn" id="ports">
+            <li class="disabled"><a href="#" id="defaultPortSel">Select Port</a></li>
+            <li><a href="#" class="devClass" id="dev0"></a></li>
+            <li><a href="#" class="devClass" id="dev1"></a></li>
+            <li><a href="#" class="devClass" id="dev2"></a></li>
+            <li><a href="#" class="devClass" id="dev3"></a></li>
+            <li><a href="#" class="devClass" id="dev4"></a></li>
+            <li><a href="#" class="devClass" id="dev5"></a></li>
+          </ul>
+        </div>
+
+        <div class="dropup">
+          <button class="btn btn-default dropdown-toggle" type="button" id='baudBtn' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Baud</button>
+          <ul class="dropdown-menu baudClassSel" aria-labelledby="baudBtn" id="baud">
+            <li class="disabled"><a href="#" id="defaultPortSel">Select Baud</a></li>
+            <li><a href="#" class="baudClass" id="baud0">110</a></li>
+            <li><a href="#" class="baudClass" id="baud1">300</a></li>
+            <li><a href="#" class="baudClass" id="baud2">600</a></li>
+            <li><a href="#" class="baudClass" id="baud3">1200</a></li>
+            <li><a href="#" class="baudClass" id="baud4">2400</a></li>
+            <li><a href="#" class="baudClass" id="baud5">4800</a></li>
+            <li><a href="#" class="baudClass" id="baud6">9600</a></li>
+            <li><a href="#" class="baudClass" id="baud7">14400</a></li>
+            <li><a href="#" class="baudClass" id="baud8">19200</a></li>
+            <li><a href="#" class="baudClass" id="baud9">28800</a></li>
+            <li><a href="#" class="baudClass" id="baud10">38400</a></li>
+            <li><a href="#" class="baudClass" id="baud11">56000</a></li>
+            <li><a href="#" class="baudClass" id="baud12">57600</a></li>
+            <li><a href="#" class="baudClass" id="baud13">115200</a></li>
+            <li><a href="#" class="baudClass" id="baud14">128000</a></li>
+            <li><a href="#" class="baudClass" id="baud15">153600</a></li>
+            <li><a href="#" class="baudClass" id="baud16">230400</a></li>
+            <li><a href="#" class="baudClass" id="baud17">256000</a></li>
+            <li><a href="#" class="baudClass" id="baud18">460800</a></li>
+            <li><a href="#" class="baudClass" id="baud19">921600</a></li>
+          </ul>
+        </div>
+
+      <button class="btn btn-success" id="save">Save init.lua</button>
+      <button class="btn btn-success" id="open">Open lua File</button>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" id="uploadProgress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0"></div>
+      </div>
+  </div>
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    window.$ = window.jQuery = require(__dirname+'/ui/js/jquery-1.12.3.js');
+    require(__dirname+'/ui/js/bootstrap.min.js');
+    require(__dirname+'/utils/aceEditor/ace.js')//ace code editor
+    require(__dirname+'/code.js');
+    require(__dirname+'/mcu.js');
+    const {ipcRenderer} = require('electron'); //for Communication with main process
+
+    const {remote} = require('electron');
+    const {Menu, MenuItem} = remote;
+
+    const menu = new Menu();
+    menu.append(new MenuItem({label: 'MenuItem1', click() { console.log('item 1 clicked'); }}));
+    menu.append(new MenuItem({type: 'separator'}));
+    menu.append(new MenuItem({label: 'MenuItem2', type: 'checkbox', checked: true}));
+
+    window.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      menu.popup(remote.getCurrentWindow());
+    }, false);
+    
+  </script>
+</html>

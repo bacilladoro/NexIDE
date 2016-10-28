@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NexTerm</title>
+    <link href="./ui/css/bootstrapterm.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div id="editor1" class="hidden"></div> <!--we need this to prevent errors-->
+    <div id="editor2" class="hidden"></div> <!--we need this to prevent errors-->
+    <div id="editor3" class="hidden"></div> <!--we need this to prevent errors-->
+
+    <div class="container-fluid mainDiv">
+      <div class="container-fluid" id="terminal">\\---------------------------//<br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to NexTerm</strong><br/>//---------------------------\\<br/></div>
+      <div class ="rightMenu">
+        <ul>
+          <li id="devInfo" class="sideBtn btn btn-sm btn-success"><a id="devInfo" href="#">Device Info</a></li>
+          <li id="fsinfo" class="sideBtn btn btn-sm btn-success"><a id="fsinfo" href="#">File System</a></li>
+          <li id="ipAdd" class="sideBtn btn btn-sm btn-success"><a id="ipAdd" href="#">Ip Address</a></li>
+          <li id="initLua" class="sideBtn btn btn-sm btn-success"><a id="initLua"  href="#">Run init.lua</a></li>
+          <li id="reset" class="sideBtn btn btn-sm btn-danger"><a id="reset" href="#">Reset</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="container-fluid footer">
+      <button class="btn btn-success btn-lg" id="openPort">Open</button>
+      	<div class="dropup">
+          <button class="btn btn-default dropdown-toggle" type="button" id='portBtn' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Port</button>
+          <ul class="dropdown-menu devClassSel" aria-labelledby="portBtn" id="ports">
+            <li class="disabled"><a href="#" id="defaultPortSel">Select Port</a></li>
+            <li><a href="#" class="devClass" id="dev0"></a></li>
+            <li><a href="#" class="devClass" id="dev1"></a></li>
+            <li><a href="#" class="devClass" id="dev2"></a></li>
+            <li><a href="#" class="devClass" id="dev3"></a></li>
+            <li><a href="#" class="devClass" id="dev4"></a></li>
+            <li><a href="#" class="devClass" id="dev5"></a></li>
+
+          </ul>
+        </div>
+
+        <div class="dropup">
+          <button class="btn btn-default dropdown-toggle" type="button" id='baudBtn' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Baud</button>
+          <ul class="dropdown-menu baudClassSel" aria-labelledby="baudBtn" id="baud">
+            <li class="disabled"><a href="#" id="defaultPortSel">Select Baud</a></li>
+            <li><a href="#" class="baudClass" id="baud0">110</a></li>
+            <li><a href="#" class="baudClass" id="baud1">300</a></li>
+            <li><a href="#" class="baudClass" id="baud2">600</a></li>
+            <li><a href="#" class="baudClass" id="baud3">1200</a></li>
+            <li><a href="#" class="baudClass" id="baud4">2400</a></li>
+            <li><a href="#" class="baudClass" id="baud5">4800</a></li>
+            <li><a href="#" class="baudClass" id="baud6">9600</a></li>
+            <li><a href="#" class="baudClass" id="baud7">14400</a></li>
+            <li><a href="#" class="baudClass" id="baud8">19200</a></li>
+            <li><a href="#" class="baudClass" id="baud9">28800</a></li>
+            <li><a href="#" class="baudClass" id="baud10">38400</a></li>
+            <li><a href="#" class="baudClass" id="baud11">56000</a></li>
+            <li><a href="#" class="baudClass" id="baud12">57600</a></li>
+            <li><a href="#" class="baudClass" id="baud13">115200</a></li>
+            <li><a href="#" class="baudClass" id="baud14">128000</a></li>
+            <li><a href="#" class="baudClass" id="baud15">153600</a></li>
+            <li><a href="#" class="baudClass" id="baud16">230400</a></li>
+            <li><a href="#" class="baudClass" id="baud17">256000</a></li>
+            <li><a href="#" class="baudClass" id="baud18">460800</a></li>
+            <li><a href="#" class="baudClass" id="baud19">921600</a></li>
+          </ul>
+        </div>
+
+    <form id="cmdForm">
+      <input type="text" class="input-lg" id="cmdInput" placeholder="Type command"></input>
+      <input type="submit" class="hidden"></input>
+    </form>
+  </div>
+
+</body>
+
+<script>
+    window.$ = window.jQuery = require('./ui/js/jquery-1.12.3.js'); //to use jquery
+    require('./ui/js/bootstrap.min.js');
+    require('./utils/aceEditor/ace.js')//ace code editor    require('./mcu.js');
+    require('./code.js');
+    require('./mcu.js');
+    require('./terminal.js');
+  </script>
+</html>

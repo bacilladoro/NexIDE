@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<title>Firmware Builder</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="./ui/css/bootstrapfirm.min.css" rel="stylesheet">
+<link href="./ui/fontAwesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<h1 class="builder">Firmware Builder</h1>
+
+<div class="container-fluid">
+    <div class="container-fluid leftOptions">
+      <input type="checkbox" id="ADC"><span  class="option optionADC fa fa-fw"></span>ADC</input>
+    </br>
+    <input type="checkbox" id="ADXL345"><span  class="option optionADXL345 fa fa-fw"></span>ADXL345</input>
+    </br>
+     <input type="checkbox" id="AM2320"><span  class="option optionAM2320 fa fa-fw"></span>AM2320</input>
+    </br>
+    <input type="checkbox" id="APA102"><span  class="option optionAPA102 fa fa-fw"></span>APA102</input>
+    </br>
+      <input type="checkbox" id="BIT" checked="true"><span  class="option optionBIT fa fa-fw"></span>BIT</input>
+    </br>
+      <input type="checkbox" id="BMP085"><span  class="option optionBMP085 fa fa-fw"></span>BMP085</input>
+    </br>
+    <input type="checkbox" id="BME280"><span  class="option optionBME280 fa fa-fw"></span>BME280</input>
+    </br>
+      <input type="checkbox" id="CJSON" checked="true"><span  class="option optionCJSON fa fa-fw"></span>CJSON</input>
+    </br>
+      <input type="checkbox" id="COAP" checked="true"><span  class="option optionCOAP fa fa-fw"></span>COAP</input>
+    </br>
+      <input type="checkbox" id="CRYPTO"><span  class="option optionCRYPTO fa fa-fw"></span>CRYPTO</input>
+    </br>
+      <input type="checkbox" id="DHT"><span  class="option optionDHT fa fa-fw"></span>DHT</input>
+    </br>
+      <input type="checkbox" id="ENCODER"><span  class="option optionENCODER fa fa-fw"></span>ENCODER</input>
+    </br>
+      <input type="checkbox" id="ENDUSER_SETUP"><span  class="option optionENDUSER_SETUP fa fa-fw"></span>ENDUSER SETUP</input>
+    </br>
+      <input type="checkbox" id="FILE" checked="true"><span  class="option optionFILE fa fa-fw"></span>FILE</input>
+    </br>
+      <input type="checkbox" id="GDBSTUB"><span  class="option optionGDBSTUB fa fa-fw"></span>GDBSTUB</input>
+    </br>
+      <input type="checkbox" id="GPIO" checked="true"><span  class="option optionGPIO fa fa-fw"></span>GPIO</input>
+    </br>
+      <input type="checkbox" id="HMC5883L"><span  class="option optionHMC5883L fa fa-fw"></span>HMC5883L</input>
+    </br>
+      <input type="checkbox" id="HTTP" checked="true"><span  class="option optionHTTP fa fa-fw"></span>HTTP</input>
+    </br>
+      <input type="checkbox" id="HX711"><span  class="option optionHX711 fa fa-fw"></span>HX711</input>
+    </div>
+    <div class="container-fluid midOptions">
+      <input type="checkbox" id="I2C" checked="true"><span  class="option optionI2C fa fa-fw"></span>I2C</input>
+    </br>
+      <input type="checkbox" id="L3G4200D"><span  class="option optionL3G4200D fa fa-fw"></span>L3G4200D</input>
+    </br>
+      <input type="checkbox" id="MDNS"><span  class="option optionMDNS fa fa-fw"></span>MDNS</input>
+    </br>
+      <input type="checkbox" id="MQTT" checked="true"><span  class="option optionMQTT fa fa-fw"></span>MQTT</input>
+    </br>
+      <input type="checkbox" id="NET" checked="true"><span  class="option optionNET fa fa-fw"></span>NET</input>
+    </br>
+      <input type="checkbox" id="NODE" checked="true"><span  class="option optionNODE fa fa-fw"></span>NODE</input>
+    </br>
+      <input type="checkbox" id="OW" checked="true"><span  class="option optionOW fa fa-fw"></span>OW</input>
+    </br>
+      <input type="checkbox" id="PCM"><span  class="option optionPCM fa fa-fw"></span>PCM</input>
+    </br>
+      <input type="checkbox" id="PERF"><span  class="option optionPERF fa fa-fw"></span>PERF</input>
+    </br>
+      <input type="checkbox" id="PWM"><span  class="option optionPWM fa fa-fw"></span>PWM</input>
+    </br>
+      <input type="checkbox" id="RC"><span  class="option optionRC fa fa-fw"></span>RC</input>
+    </br>
+      <input type="checkbox" id="ROTARY"><span  class="option optionROTARY fa fa-fw"></span>ROTARY</input>
+    </br>
+      <input type="checkbox" id="RTCFIFO"><span  class="option optionRTCFIFO fa fa-fw"></span>RTCFIFO</input>
+    </br>
+      <input type="checkbox" id="RTCMEM"><span  class="option optionRTCMEM fa fa-fw"></span>RTCMEM</input>
+    </br>
+      <input type="checkbox" id="RTCTIME"><span  class="option optionRTCTIME fa fa-fw"></span>RTCTIME</input>
+  </div>
+  <div class="container-fluid rightOptions">
+      <input type="checkbox" id="SIGMA_DELTA"><span  class="option optionSIGMA_DELTA fa fa-fw"></span>SIGMA DELTA</input>
+    </br>
+      <input type="checkbox" id="SNTP"><span  class="option optionSNTP fa fa-fw"></span>SNTP</input>
+    </br>
+      <input type="checkbox" id="SPI" checked="true"><span  class="option optionSPI fa fa-fw"></span>SPI</input>
+    </br>
+      <input type="checkbox" id="STRUCT"><span  class="option optionSTRUCT fa fa-fw"></span>STRUCT</input>
+    </br>
+      <input type="checkbox" id="SWITEC"><span  class="option optionSWITEC fa fa-fw"></span>SWITEC</input>
+    </br>
+      <input type="checkbox" id="TM1829"><span  class="option optionTM1829 fa fa-fw"></span>TM1829</input>
+    </br>
+      <input type="checkbox" id="TMR" checked="true"><span  class="option optionTMR fa fa-fw"></span>TMR</input>
+    </br>
+      <input type="checkbox" id="TSL2561"><span  class="option optionTSL2561 fa fa-fw"></span>TSL2561</input>
+    </br>
+      <input type="checkbox" id="U8G"><span  class="option optionU8G fa fa-fw"></span>U8G</input>
+    </br>
+      <input type="checkbox" id="UART" checked="true"><span  class="option optionUART fa fa-fw"></span>UART</input>
+    </br>
+      <input type="checkbox" id="UCG"><span  class="option optionUCG fa fa-fw"></span>UCG</input>
+    </br>
+      <input type="checkbox" id="WEBSOCKET"><span  class="option optionWEBSOCKET fa fa-fw"></span>WEBSOCKET</input>
+    </br>
+      <input type="checkbox" id="WIFI" checked="true"><span  class="option optionWIFI fa fa-fw"></span>WIFI</input>
+    </br>
+      <input type="checkbox" id="WS2801"><span  class="option optionWS2801 fa fa-fw"></span>WS2801</input>
+    </br>
+      <input type="checkbox" id="WS2812"><span  class="option optionWS2812 fa fa-fw"></span>WS2812</input>
+    </br>
+  </div>
+</div>
+<!-- YET TO ADD A FEW THINGS-->
+<div class="footer">
+  <input type="button" id="upload" class="btn btn-lg btn-success" value="Upload"></input>
+
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" id='portBtn' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Port</button>
+    <ul class="dropdown-menu devClassSel" aria-labelledby="portBtn" id="ports">
+      <li class="disabled"><a href="#" id="defaultPortSel">Select Port</a></li>
+      <li><a href="#" class="devClass" id="dev0"></a></li>
+      <li><a href="#" class="devClass" id="dev1"></a></li>
+      <li><a href="#" class="devClass" id="dev2"></a></li>
+      <li><a href="#" class="devClass" id="dev3"></a></li>
+      <li><a href="#" class="devClass" id="dev4"></a></li>
+      <li><a href="#" class="devClass" id="dev5"></a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+</body>
+<script>
+  window.$ = window.jQuery = require('./ui/js/jquery-1.12.3.js'); //to use jquery
+  require('./firmware.js');
+  require('./ui/js/bootstrap.min.js');
+  require('./mcu.js');
+</script>
+
+</html>
